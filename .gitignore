@@ -1,5 +1,5 @@
 # Service Account
-android/app/google-services.json
+android/app/*.json
 
 # Built application files
 *.apk
