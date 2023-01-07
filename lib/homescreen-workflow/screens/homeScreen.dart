@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dio/dio.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -165,7 +166,7 @@ class _HomeScreenState extends State<HomeScreen> {
               height: height / 40,
             ),
             Text(
-              "Good Day, Raghav!😃",
+              "Good Day, !😃",
               style: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.bold,
@@ -210,7 +211,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   padding: EdgeInsets.symmetric(horizontal: 10),
                   itemCount: devicesInfo.length,
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
+                    crossAxisCount: kIsWeb ? 5 : 2,
+                    // crossAxisCount: 2,
                     mainAxisExtent: 100,
                     crossAxisSpacing: 15.0,
                     mainAxisSpacing: 15.0,
