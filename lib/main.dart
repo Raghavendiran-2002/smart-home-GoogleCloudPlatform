@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'smart-home',
-      initialRoute: "/",
+      initialRoute: "homescreen",
       routes: {
         "/": (context) => LoginScreen(),
         "homescreen": (context) => HomeScreen(),
