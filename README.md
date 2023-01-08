@@ -57,24 +57,17 @@ Step 5 - Install and Test the Mosquitto Clients
 Step 6 - Secure the Mosquitto Server
 ```
 - sudo nano /etc/mosquitto/conf.d/default.conf
-```
-- add
-  - ```
+
+- "add"
   allow_anonymous false
   password_file /etc/mosquitto/passwd
-  ```
-  ```
 - sudo nano /etc/mosquitto/passwd
-  ```
-- add
-  - ```
+- "add"
   admin:Password
   <username>:<password>
-    ```
-  ```
 - sudo mosquitto_passwd -U /etc/mosquitto/passwd
 - sudo systemctl restart mosquitto
-  ```
+```
 
 Step 7 - Setting up Firewall
 
