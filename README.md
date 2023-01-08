@@ -15,9 +15,9 @@ Open Firebase : https://console.firebase.google.com/
 - Enable Authentication
 
 ## Create a VM in Compute Engine GCP
-
+```
 gcloud compute instances create <project-name> --project=<projectID> --zone=asia-south1-c --machine-type=e2-medium --network-interface=network-tier=PREMIUM,subnet=default --maintenance-policy=MIGRATE --provisioning-model=STANDARD --service-account=1096058629309-compute@developer.gserviceaccount.com --scopes=https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append --tags=http-server,https-server --create-disk=auto-delete=yes,boot=yes,device-name=smart-home,image=projects/ubuntu-os-cloud/global/images/ubuntu-2004-focal-v20221213,mode=rw,size=15,type=projects/gccp-project-373305/zones/asia-south1-c/diskTypes/pd-ssd --no-shielded-secure-boot --shielded-vtpm --shielded-integrity-monitoring --reservation-affinity=any
-
+```
 Step 1 — Installing MongoDB
 ```
 - curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
