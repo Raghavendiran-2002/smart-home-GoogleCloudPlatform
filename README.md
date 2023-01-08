@@ -7,8 +7,7 @@ A new Smart-Home Flutter project.
 flutter create --org com.<orgName> <AppName>
 
 Open Firebase : https://console.firebase.google.com/
-
-- Create Project <name>
+```Create Project <name>```
 - Under Project select Flutter
 - Follow the Instructions
 - Enable Authentication
